@@ -10,5 +10,15 @@
     <input type="text" name="inputText" placeholder="Tu wpisz dzialanie">
     <button>Wyslij</button>
 </form>
+<hr>
+Wynik
+<p th:text="${result}"></p>
+
+<div th:if="${!history.isEmpty()}">
+    <h1>Historia</h1>
+    <ul>
+        <li th:each="item : ${history}" th:text="${item}"></li>
+    </ul>
+</div>
 </body>
 </html>
