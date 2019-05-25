@@ -1,11 +1,14 @@
 package pl.sda.spring.calculate.springcalculate;
 
+import org.springframework.stereotype.Service;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiFunction;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+@Service
 public class Calculator {
 
     private BiFunction<Double, Double, Double> add = (a, b) -> a + b;

@@ -8,6 +8,10 @@ public class SpringCalculateApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SpringCalculateApplication.class, args);
+
+        /*po staremu
+        Calculator calculator = new Calculator();
+        System.out.println(calculator.calculate("4+8"));*/
     }
 
 }

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<form action="/calculate">
+    <p th:text="${info}">To bedzie zmienione po stronie serwera</p> <!--"Weź mi tekst z modelu wg klucza-->
+    <input type="text" name="inputText" placeholder="Tu wpisz dzialanie">
+    <button>Wyslij</button>
+</form>
+</body>
+</html>
